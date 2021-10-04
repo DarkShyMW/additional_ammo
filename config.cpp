@@ -441,10 +441,18 @@ class cfgAmmoTypes
 	{
 		name="Bullet_new_9x39Imbalanced";
 	};
-	class AType_Bullet_new_8mm_SME
+	class AType_Bullet_new_8mm_M88
 	{
-		name="Bullet_new_8mm_SME";
+		name="Bullet_new_8mm_M88";
 	};
+	class AType_Bullet_new_8mm_S
+	{
+		name="Bullet_new_8mm_S";
+	};
+	class AType_Bullet_new_8mm_sS 
+	{
+		name="Bullet_new_8mm_sS";
+	}
 };
 class CfgAmmo
 {
@@ -601,6 +609,7 @@ class CfgAmmo
 			};
 		};
 	};
+	
 	class Bullet_357: Bullet_Base
 	{
 		class DamageApplied
@@ -3578,9 +3587,88 @@ class CfgAmmo
 			};
 		};
 	};
+	class Bullet_new_8mm_M88: Bullet_308Win
+	{
+		scope=2;
+		spawnPileType="Ammo_new_8mm_M88";
+		initSpeed=637;
+		typicalSpeed=637;
+		projectilesCount=1;
+		class DamageApplied
+		{
+			type="Projectile";
+			dispersion=0;
+			bleedThreshold=1;
+			class Health
+			{
+				damage=112;
+			};
+			class Blood
+			{
+				damage=95;
+			};
+			class Shock
+			{
+				damage=95;
+			};
+		};
+	};
+	class Bullet_new_8mm_S: Bullet_308Win
+		{
+		scope=2;
+		spawnPileType="Ammo_new_8mm_S";
+		initSpeed=854;
+		typicalSpeed=854;
+		projectilesCount=1;
+		class DamageApplied
+		{
+			type="Projectile";
+			dispersion=0;
+			bleedThreshold=1;
+			class Health
+			{
+				damage=200;
+			};
+			class Blood
+			{
+				damage=98;
+			};
+			class Shock
+			{
+				damage=100;
+			};
+		};
+	};
+	class Bullet_new_8mm_sS: Bullet_308Win
+		{
+		scope=2;
+		spawnPileType="Ammo_new_8mm_sS";
+		initSpeed=808;
+		typicalSpeed=808;
+		projectilesCount=1;
+		class DamageApplied
+		{
+			type="Projectile";
+			dispersion=0;
+			bleedThreshold=1;
+			class Health
+			{
+				damage=250;
+			};
+			class Blood
+			{
+				damage=100;
+			};
+			class Shock
+			{
+				damage=80;
+			};
+		};
+	};
 };
 class CfgMagazines
 {
+	class Ammo_8mm;
 	class Ammo_12gaPellets;
 	class Ammo_12gaSlug;
 	class Ammo_22;
