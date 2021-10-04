@@ -3668,7 +3668,7 @@ class CfgAmmo
 };
 class CfgMagazines
 {
-	class Ammo_8mm;
+	class TTC_Ammo_8mm;
 	class Ammo_12gaPellets;
 	class Ammo_12gaSlug;
 	class Ammo_22;
@@ -3688,6 +3688,22 @@ class CfgMagazines
 	class Ammo_9x19;
 	class Ammo_9x39;
 	class Magazine_Base;
+	class Bullet_new_8mm_M88: Bullet_308Win
+	{
+		scope=2;
+		displayName="$STR_CfgMagazines_Ammo_new_8mmM88";
+		descriptionShort="$STR_CfgMagazines_Ammo_new_8mmDM88";
+		count=30;
+		ammo="Bullet_new_8mm_M88";
+	};
+	class Bullet_new_8mm_S: Bullet_308Win
+	{
+		scope=2;
+		displayName="$STR_CfgMagazines_Ammo_new_8mmS";
+		descriptionShort="$STR_CfgMagazines_Ammo_new_8mmDS";
+		count=30;
+		ammo="Bullet_new_8mm_S";
+	};
 	class Ammo_new_12gaBuckshot5: Ammo_12gaPellets
 	{
 		scope=2;
